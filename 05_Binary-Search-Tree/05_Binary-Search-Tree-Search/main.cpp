@@ -138,7 +138,7 @@ int main(){
         cout << "There are totally " << words.size() << " words in " << filename << endl;
         cout << endl;
 
-        // 测试BST
+        // 测试BST 基于二分查找树
         time_t startTime = clock();
         // 统计所有词的词频
         // 注: 这个词频统计法相对简陋, 没有考虑很多文本处理中的特殊问题
