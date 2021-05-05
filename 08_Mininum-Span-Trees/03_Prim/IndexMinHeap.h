@@ -39,7 +39,7 @@ private:
                 j += 1;
 
             // 如果需要比较的节点不比子节点大，说明最小堆的性质已经维护好了
-            if(data[indexes[k] <= data[j]])
+            if(data[indexes[k]] <= data[indexes[j]])
                 break;
 
             // 否则仍需要交换
