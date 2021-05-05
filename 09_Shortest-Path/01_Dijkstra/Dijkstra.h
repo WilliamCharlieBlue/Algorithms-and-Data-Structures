@@ -84,7 +84,7 @@ public:
     }
 
     // 从顶点到w是否有路径
-    bool hasPath(int w){
+    bool hasPathTo(int w){
         return marked[w];
     }
 
@@ -97,6 +97,7 @@ public:
             s.push(e);
             e = from[e->v()];
         }
+
         // 再正序地压入向量中 0->9
         while(!s.empty()){
             e = s.top();
