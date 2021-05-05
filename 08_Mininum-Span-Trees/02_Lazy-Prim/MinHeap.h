@@ -34,9 +34,9 @@ private:
     }
 
 public:
-    // 构造函数，构造一个空堆，可容纳capacity个元素
+    // 构造函数，构造一个空堆，可容纳capacity+1个元素
     MinHeap(int capacity){
-        data = new Item[capacity];
+        data = new Item[capacity+1];
         count = 0;
         this->capacity = capacity;
     }
