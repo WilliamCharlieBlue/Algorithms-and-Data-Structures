@@ -23,8 +23,8 @@ public:
         // pq的空间是边数的大小
         MinHeap<Edge<Weight>> pq(graph.E());
         for(int i=0; i<graph.V(); i++){
-            typename Graph::adjIterator adj(graph, i);
-            for(Edge<Weight> *e = adj.begin(); !adj.end(); e = adj.next){
+            typename Graph::adjIterator adj(graph,i);
+            for(Edge<Weight>* e = adj.begin(); !adj.end(); e = adj.next()){
                 // 最小生成树是针对无向图来做的，对于双向的边只取一条就可以了
                 // 例如 1和2 ,只放1->2；不放1<-2
                 if(e->v() < e->w())
@@ -44,7 +44,7 @@ public:
                 continue;
             // 否则，这条边是横切边，需要压入最小生成树中，然后把两个顶点放入一个集合中
             mst.push_back(e);
-            uf.unionElememts(e.v(), e.w());
+            uf.unionElements(e.v(), e.w());
         }
     }
 

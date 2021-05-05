@@ -97,22 +97,22 @@ int main_performance(){
     cout<<"Test Kruskal MST: "<<endl;
 
     startTime = clock();
-    PrimMST<SparseGraph<double>, double> KruskalMst3(g3);
+    KruskalMST<SparseGraph<double>, double> KruskalMst3(g3);
     endTime = clock();
     cout<<"TEST for G3: "<<(double )(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     startTime = clock();
-    PrimMST<SparseGraph<double>, double> KruskalMst4(g4);
+    KruskalMST<SparseGraph<double>, double> KruskalMst4(g4);
     endTime = clock();
     cout<<"TEST for G4: "<<(double )(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     startTime = clock();
-    PrimMST<SparseGraph<double>, double> KruskalMst5(g5);
+    KruskalMST<SparseGraph<double>, double> KruskalMst5(g5);
     endTime = clock();
     cout<<"TEST for G5: "<<(double )(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     startTime = clock();
-    PrimMST<SparseGraph<double>, double> KruskalMst6(g6);
+    KruskalMST<SparseGraph<double>, double> KruskalMst6(g6);
     endTime = clock();
     cout<<"TEST for G6: "<<(double )(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 

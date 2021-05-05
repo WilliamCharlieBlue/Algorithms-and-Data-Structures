@@ -62,7 +62,7 @@ public:
 
     // 合并元素p和元素q所属的集合
     // O(h)复杂度，h为数的高度
-    void unionElememts(int p, int q){
+    void unionElements(int p, int q){
         int pRoot = find(p);
         int qRoot = find(q);
         if(pRoot == qRoot)
